@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2584687C-EE54-40BE-8FE1-D7F25D257A5D}</ProjectGuid>
+    <ProjectGuid>{1E03BF1E-61EA-4E70-A66A-54FA9A3A8FF2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataModellingDemo</RootNamespace>
-    <AssemblyName>DataModellingDemo</AssemblyName>
+    <RootNamespace>EmbedOrReferenceDemo</RootNamespace>
+    <AssemblyName>EmbedOrReferenceDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -71,20 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Order.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Order.json" />
-    <None Include="Customer.json" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModellingDemo\DataModellingDemo.csproj">
+      <Project>{2584687c-ee54-40be-8fe1-d7f25d257a5d}</Project>
+      <Name>DataModellingDemo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Azure.DocumentDB.2.1.0\build\Microsoft.Azure.DocumentDB.targets" Condition="Exists('..\packages\Microsoft.Azure.DocumentDB.2.1.0\build\Microsoft.Azure.DocumentDB.targets')" />

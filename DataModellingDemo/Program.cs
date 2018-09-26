@@ -13,7 +13,7 @@ namespace DataModellingDemo
 {
     class Program
     {
-        private static readonly Uri _endpointUri = new Uri("");
+        private static readonly Uri _endpointUri = new Uri("endpoint");
         private static readonly string _primaryKey = "key";
         public static async Task Main(string[] args)
         {
@@ -138,9 +138,7 @@ namespace DataModellingDemo
 
             // then query for all the orders
             var queryCustomerOrders = "SELECT c.orderId, c.itemsOrdered FROM c WHERE c.customerId = 5";
-            FeedOptions feedOptions = new FeedOptions
-            {
-            };
+            FeedOptions feedOptions = new FeedOptions{};
 
             Uri collectionLinkCustomers = UriFactory.CreateDocumentCollectionUri("Database1", "Customers");
             Uri collectionLinkOrders = UriFactory.CreateDocumentCollectionUri("Database1", "Orders");
@@ -155,7 +153,7 @@ namespace DataModellingDemo
 
                     var customer = client.CreateDocumentQuery<dynamic>(collectionLinkCustomers, queryCustomer, feedOptions).ToList().FirstOrDefault();
 
-                    var orders = client.CreateDocumentQuery<dynamic>(collectionLinkOrders, queryCustomerOrders, feedOptions).ToList();//.FirstOrDefault();
+                    var orders = client.CreateDocumentQuery<dynamic>(collectionLinkOrders, queryCustomerOrders, feedOptions).ToList();
 
                     sw.Stop();
                     Console.WriteLine($"Found {orders.Count()} orders for customer {customer.name}");
