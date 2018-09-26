@@ -1,0 +1,25 @@
+{
+  "orderId": 5,
+  "customerId": 37,
+  "orderDate": "2018-09-25T06:21:21.1350758-04:00",
+  "itemsOrdered": [
+    {
+      "itemId": 0,
+      "itemName": "orange",
+      "price": "931.60",
+      "qty": 9
+    },
+    {
+      "itemId": 0,
+      "itemName": "cheeseburger",
+      "price": "818.70",
+      "qty": 2
+    }
+  ],
+  "id": "443cae0d-def6-4a04-bdfd-592db4823233",
+  "_rid": "FSoDAMKi69QGAAAAAAAAAA==",
+  "_self": "dbs/FSoDAA==/colls/FSoDAMKi69Q=/docs/FSoDAMKi69QGAAAAAAAAAA==/",
+  "_etag": "\"0000ce24-0000-0800-0000-5bab11130000\"",
+  "_attachments": "attachments/",
+  "_ts": 1537937683
+}

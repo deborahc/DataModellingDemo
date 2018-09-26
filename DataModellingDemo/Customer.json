@@ -1,0 +1,13 @@
+{
+  "customerId": 37,
+  "name": "Alice",
+  "email": "Alice.Contoso@gmail.com",
+  "number": "1-990-502-1729 x5941",
+  "address": "11107 Schuster Trafficway, Wittingview, French Southern Territories",
+  "id": "33dab382-ffdf-4695-a424-f2a9b18db161",
+  "_rid": "FSoDAPjM9YoEAAAAAAAAAA==",
+  "_self": "dbs/FSoDAA==/colls/FSoDAPjM9Yo=/docs/FSoDAPjM9YoEAAAAAAAAAA==/",
+  "_etag": "\"2b00000c-0000-0800-0000-5bab11020000\"",
+  "_attachments": "attachments/",
+  "_ts": 1537937666
+}
